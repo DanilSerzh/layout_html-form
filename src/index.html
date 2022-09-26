@@ -12,8 +12,8 @@
   </head>
   <body>
     <form action="http://localhost:8080/api">
-      <div class="group">
-        <h3>Personal information</h3>
+      <fieldset class="group">
+        <legend>Personal information</legend>
         <label class="form-filed">
           Surname:
           <input type="text" autocomplete="off"
@@ -43,9 +43,9 @@
           required
           >
         </label>
-      </div>
-      <div class="group">
-        <h3>Registration</h3>
+      </fieldset>
+      <fieldset class="group">
+        <legend>Registration</legend>
         <label class="form-filed">
           E-mail:
           <input type="email" name="email"
@@ -59,22 +59,22 @@
           required
           >
         </label>
-      </div>
-      <div class="group">
-        <h3>About you</h3>
+      </fieldset>
+      <fieldset class="group">
+        <legend>An interesting fact about you!</legend>
         <div class="form-filed">
           Do you love cats?
           <label>
             <input type="radio" name="cat"
             value="y"
             >
-            YES
+            Yes
           </label>
           <label>
             <input type="radio" name="cat"
             value="n"
             >
-            NO
+            No
           </label>
         </div>
         <label class="form-filed">
@@ -86,50 +86,34 @@
           <input type="time" name="time">
         </label>
         <label class="form-filed">
-          Which classic is better?
+          What are your favorite brand of cars?
           <select name="car" multiple>
-            <option disabled selected>Choose visely</option>
-            <option value="2101">LADA 2101</option>
-            <option value="2102">LADA 2102</option>
-            <option value="2103">LADA 2103</option>
-            <option value="2104">LADA 2104</option>
-            <option value="2105">LADA 2105</option>
-            <option value="2106">LADA 2106</option>
-            <option value="2107">LADA 2107</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="lada">LADA</option>
           </select>
         </label>
         <label class="form-filed">
-          How do you rate my work?
+          How do you rate our work?
           <input type="range" name="rate"
           min="1" max="10"
           >
         </label>
-      </div>
-      <div class="group">
-        <h3>Feedback</h3>
+      </fieldset>
+      <fieldset class="group">
+        <legend>Additional info</legend>
         <label class="form-filed">
-          Say something about my form:
-          <textarea name="feedback" rows="3"
-          cols="20"
-          >
-          </textarea>
+          Comments:
+          <textarea name="feedback"></textarea>
         </label>
         <div class="form-filed">
-          Do you like my form?
-          <label>
-            <input type="radio" name="feedback"
-            value="y"
-            >
-            YES
-          </label>
-          <label>
-            <input type="radio" name="feedback"
-            value="n"
-            >
-            NO
-          </label>
+          Would you recomend us?
+          <select name="feedback">
+            <option value="y" selected>yes</option>
+            <option value="n">no</option>
+          </select>
         </div>
-      </div>
+      </fieldset>
       <button type="submit">Submit</button>
     </form>
     <script type="text/javascript" src="./main.js"></script>

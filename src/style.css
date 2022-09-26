@@ -1,14 +1,9 @@
 .form-filed {
   display: block;
   padding: 5px;
-  margin-left: 20px;
 }
 
 .group {
-  margin: 20px;
-  border: 2px solid black;
-}
-
-h3 {
-  margin: 5px;
+  margin-bottom: 20px;
+  border: 1px solid black;
 }
