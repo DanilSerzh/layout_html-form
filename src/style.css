@@ -1,9 +1,8 @@
-.form-filed {
+.form-filed:not(:last-child) {
   display: block;
-  padding: 5px;
+  margin-bottom: 10px;
 }
 
 .group {
   margin-bottom: 20px;
-  border: 1px solid black;
 }
