@@ -11,7 +11,127 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="http://localhost:8080/api">
+      <div class="group">
+        <h3>Personal information</h3>
+        <label class="form-filed">
+          Surname:
+          <input type="text" autocomplete="off"
+          name="surname" required
+          >
+        </label>
+        <label class="form-filed">
+          Name:
+          <input type="text" autocomplete="off"
+          name="name" required
+          >
+        </label>
+        <label class="form-filed">
+          How old are you?
+          <input type="number" name="age"
+            min="1" max="100"
+            value="12" required
+          >
+        </label>
+        <label class="form-filed">
+          Full date of birth:
+          <input type="date" name="date">
+        </label>
+        <label class="form-filed">
+          I accept the terms of the agreement
+          <input type="checkbox" name="agreement"
+          required
+          >
+        </label>
+      </div>
+      <div class="group">
+        <h3>Registration</h3>
+        <label class="form-filed">
+          E-mail:
+          <input type="email" name="email"
+          placeholder="email@example.com" required
+          >
+        </label>
+        <label class="form-filed">
+          Password:
+          <input type="password" name="password"
+          minlength="8" maxlength="16"
+          required
+          >
+        </label>
+      </div>
+      <div class="group">
+        <h3>About you</h3>
+        <div class="form-filed">
+          Do you love cats?
+          <label>
+            <input type="radio" name="cat"
+            value="y"
+            >
+            YES
+          </label>
+          <label>
+            <input type="radio" name="cat"
+            value="n"
+            >
+            NO
+          </label>
+        </div>
+        <label class="form-filed">
+          What is yor favourite color?
+          <input type="color" name="color">
+        </label>
+        <label class="form-filed">
+          What time do you go to bed?
+          <input type="time" name="time">
+        </label>
+        <label class="form-filed">
+          Which classic is better?
+          <select name="car" multiple>
+            <option disabled selected>Choose visely</option>
+            <option value="2101">LADA 2101</option>
+            <option value="2102">LADA 2102</option>
+            <option value="2103">LADA 2103</option>
+            <option value="2104">LADA 2104</option>
+            <option value="2105">LADA 2105</option>
+            <option value="2106">LADA 2106</option>
+            <option value="2107">LADA 2107</option>
+          </select>
+        </label>
+        <label class="form-filed">
+          How do you rate my work?
+          <input type="range" name="rate"
+          min="1" max="10"
+          >
+        </label>
+      </div>
+      <div class="group">
+        <h3>Feedback</h3>
+        <label class="form-filed">
+          Say something about my form:
+          <textarea name="feedback" rows="3"
+          cols="20"
+          >
+          </textarea>
+        </label>
+        <div class="form-filed">
+          Do you like my form?
+          <label>
+            <input type="radio" name="feedback"
+            value="y"
+            >
+            YES
+          </label>
+          <label>
+            <input type="radio" name="feedback"
+            value="n"
+            >
+            NO
+          </label>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
